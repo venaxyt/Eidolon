@@ -1,5 +1,5 @@
 # Made by @venaxyt on Github
-import threading, requests, gratient, random, string
+import threading, requests, gratient, random, string, os
 
 banner = """
    ▄███▄   ▄█ ██▄   ████▄ █    ████▄    ▄   
@@ -11,7 +11,7 @@ banner = """
 """
 
 print(gratient.purple(banner))
-image_directory = "C:\\Users\\%username%\\Desktop\\images"
+image_directory = f"C:\\Users\\{os.getenv("UserName")}\\Desktop\\images"
 
 def FREEIMAGEHOST():
     while True:
