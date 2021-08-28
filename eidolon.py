@@ -11,7 +11,8 @@ banner = """
 """
 
 print(gratient.purple(banner))
-image_directory = f"C:\\Users\\{os.getenv("UserName")}\\Desktop\\images"
+pc_username = os.getenv("UserName")
+image_directory = f"C:\\Users\\{pc_username}\\Desktop\\images"
 
 def FREEIMAGEHOST():
     while True:
